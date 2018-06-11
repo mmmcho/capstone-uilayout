@@ -1,0 +1,24 @@
+<div class="subjects-page col-xs-12">
+<sd-areas sd-areas-side>
+ <div class="areas-left" ng-class="sideVM.showThingArea() ?'col-sm-6':'col-sm-12'">
+ <sd-area label="Images" position="left">
+
+        <sd-tabs>
+          <sd-tab label="Images">
+            <sd-ui-images></sd-ui-images>
+           </sd-tab>
+        </sd-tabs>
+ </sd-area>
+    </div> 
+<div class="areas-right col-sm-6" ng-show="sideVM.showThingArea()"> 
+  <sd-area label="Things" position="right">
+   
+    <sd-tabs>
+      <sd-ui-things></sd-ui-things>
+    </sd-tabs>
+ </sd-area>
+</div> 
+
+
+</sd-areas>
+</div>

@@ -1,0 +1,8 @@
+
+ 			<div ng-repeat="ti in $ctrl.things">
+  			<sd-tab label="{{$index+1}}">
+    			<img ng-src="{{ti.image_content_url}}?width=100"/>
+    			<span class="name">{{ti.thing_name}}</span>
+    			<p>{{ti.thing_description}}</p> 
+			</sd-tab>
+  			</div>
